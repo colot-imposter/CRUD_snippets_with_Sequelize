@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create A New Snippet Of Code</title>
+    <link rel="stylesheet" href="../public/style/style.css">
+  </head>
+  <body>
+    <h1>Create A User</h1>
+    <form action="/createSnip_form" method="post">
+      Title:<input type="text" name="name" value="{{Title}}">
+      <br>
+      Body: <textarea rows="4" cols="50" name="body" form="createSnip_form" value="{{Body}}" placeholder="Enter code here...">
+</textarea>
+      <br>
+      Notes (Optional):<input type="text" name="notes" value="{{Notes}}">
+      <br>
+      Language:<select>
+      <option value="Java"></option>
+      <option value="JavaScript"></option>
+      <option value="HTML"></option>
+      <option value="CSS"></option>
+        </select>
+      <br>
+      Tags:<input type="text" name="notes" value="{{Notes}}">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
